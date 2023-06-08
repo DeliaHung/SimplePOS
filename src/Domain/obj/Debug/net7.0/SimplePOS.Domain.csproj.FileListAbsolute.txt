@@ -1,0 +1,15 @@
+C:\Users\pingc\Documents\SimplePOS\src\Domain\bin\Debug\net7.0\SimplePOS.Domain.deps.json
+C:\Users\pingc\Documents\SimplePOS\src\Domain\bin\Debug\net7.0\SimplePOS.Domain.dll
+C:\Users\pingc\Documents\SimplePOS\src\Domain\bin\Debug\net7.0\SimplePOS.Domain.pdb
+C:\Users\pingc\Documents\SimplePOS\src\Domain\bin\Debug\net7.0\SimplePOS.Application.dll
+C:\Users\pingc\Documents\SimplePOS\src\Domain\bin\Debug\net7.0\SimplePOS.Application.pdb
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.csproj.AssemblyReference.cache
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.AssemblyInfoInputs.cache
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.AssemblyInfo.cs
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.csproj.CopyComplete
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.dll
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\refint\SimplePOS.Domain.dll
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\SimplePOS.Domain.pdb
+C:\Users\pingc\Documents\SimplePOS\src\Domain\obj\Debug\net7.0\ref\SimplePOS.Domain.dll

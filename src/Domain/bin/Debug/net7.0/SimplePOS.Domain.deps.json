@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SimplePOS.Domain/1.0.0": {
+        "dependencies": {
+          "SimplePOS.Application": "1.0.0"
+        },
+        "runtime": {
+          "SimplePOS.Domain.dll": {}
+        }
+      },
+      "SimplePOS.Application/1.0.0": {
+        "runtime": {
+          "SimplePOS.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimplePOS.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimplePOS.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
