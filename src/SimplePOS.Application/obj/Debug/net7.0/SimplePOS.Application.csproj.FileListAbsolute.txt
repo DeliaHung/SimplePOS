@@ -10,3 +10,15 @@ C:\Users\pingc\Documents\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\Si
 C:\Users\pingc\Documents\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\refint\SimplePOS.Application.dll
 C:\Users\pingc\Documents\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.pdb
 C:\Users\pingc\Documents\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\ref\SimplePOS.Application.dll
+E:\SimplePOS\src\SimplePOS.Application\bin\Debug\net7.0\SimplePOS.Application.deps.json
+E:\SimplePOS\src\SimplePOS.Application\bin\Debug\net7.0\SimplePOS.Application.dll
+E:\SimplePOS\src\SimplePOS.Application\bin\Debug\net7.0\SimplePOS.Application.pdb
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.csproj.AssemblyReference.cache
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.AssemblyInfoInputs.cache
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.AssemblyInfo.cs
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.csproj.CoreCompileInputs.cache
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.dll
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\refint\SimplePOS.Application.dll
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\SimplePOS.Application.pdb
+E:\SimplePOS\src\SimplePOS.Application\obj\Debug\net7.0\ref\SimplePOS.Application.dll

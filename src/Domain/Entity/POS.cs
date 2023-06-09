@@ -8,21 +8,23 @@ namespace SimplePOS.Domain.Entity
 {
     public class POS
     {
-        private readonly List<DiscountRule> _discountRules;
+        private readonly List<DiscountRuleBase> _discountRules = new List<DiscountRuleBase>();
 
-        public POS(List<DiscountRule> discountRules)
+        public POS(List<DiscountRuleBase> discountRules)
         {
             _discountRules = discountRules;
         }
 
         public List<Product> Products { get; private set; } = new List<Product>();
 
-        public void AddDiscountRule(DiscountRule discountRule)
+        public void AddDiscountRule(DiscountRuleBase discountRule)
         {
             if (discountRule == null)
             {
                 throw new ArgumentNullException(nameof(discountRule));
             }
+
+            _discountRules.Add(discountRule);
         }
 
         public void AddProduct(Product product)
@@ -41,6 +43,13 @@ namespace SimplePOS.Domain.Entity
             {
                 totalPrice += product.Price;
             }
+            
+            
+            foreach (var discountRule in _discountRules)
+            {
+                totalPrice -= discountRule.Process(Products);
+            }
+
             return totalPrice;
         }
     }

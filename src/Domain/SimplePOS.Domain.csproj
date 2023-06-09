@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entity\DiscountRules\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SimplePOS.Application\SimplePOS.Application.csproj" />
   </ItemGroup>
 

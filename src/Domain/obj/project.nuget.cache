@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0VbSrjX/EELdA+fna3bOwOglodBSmRwKqZ3Qkay1wMC0+qgslLK0UhU+2jxmEGvCUIy7fHPZv2m/Q8irou5Bbw==",
+  "dgSpecHash": "7rPyA/D85lkh9cuNwLigSlDemsHOnwl4VQaVz9G7VoFYLFLQD1iO6N1fIBCCTMmeIEpWCint8+IDInL+tWzgqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pingc\\Documents\\SimplePOS\\src\\Domain\\SimplePOS.Domain.csproj",
+  "projectFilePath": "E:\\SimplePOS\\src\\Domain\\SimplePOS.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
