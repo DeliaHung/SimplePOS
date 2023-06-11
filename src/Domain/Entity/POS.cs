@@ -8,49 +8,19 @@ namespace SimplePOS.Domain.Entity
 {
     public class POS
     {
-        private readonly List<DiscountRuleBase> _discountRules = new List<DiscountRuleBase>();
+        public POS() { }
 
-        public POS(List<DiscountRuleBase> discountRules)
+        public Cart CaculateTotalPrice(Cart cart)
         {
-            _discountRules = discountRules;
-        }
+            cart.TotalPrice = cart.Products.Select(p => p.Price).Sum();
 
-        public List<Product> Products { get; private set; } = new List<Product>();
-
-        public void AddDiscountRule(DiscountRuleBase discountRule)
-        {
-            if (discountRule == null)
+            foreach (var rule in cart.DiscountRules) 
             {
-                throw new ArgumentNullException(nameof(discountRule));
+                var discount =  rule.Process(cart);
+                cart.TotalPrice -= discount;
             }
 
-            _discountRules.Add(discountRule);
-        }
-
-        public void AddProduct(Product product)
-        {
-            if (product == null)
-            {
-                throw new ArgumentNullException();
-            }
-            Products.Add(product);
-        }
-
-        public decimal CaculateTotalPrice()
-        {
-            decimal totalPrice = 0;
-            foreach (var product in Products)
-            {
-                totalPrice += product.Price;
-            }
-            
-            
-            foreach (var discountRule in _discountRules)
-            {
-                totalPrice -= discountRule.Process(Products);
-            }
-
-            return totalPrice;
+            return cart;
         }
     }
 }

@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace SimplePOS.Domain.Entity.DiscountRules
 {
-    public class 指定單筆商品數量打折 : DiscountRuleBase
+    public class 指定單筆商品數量折扣 : DiscountRuleBase
     {
         private readonly int _productId;
         private readonly int _quantity;
         private readonly decimal _discountPrice;
 
-        public 指定單筆商品數量打折(int productId, int quantity, decimal discountPrice)
+        public 指定單筆商品數量折扣(int productId, int quantity, decimal discountPrice)
         {
             _productId = productId;
             _quantity = quantity;
             _discountPrice = discountPrice;
         }
 
-        public override decimal Process(List<Product> products)
+        public override decimal Process(Cart cart)
         {
-            var quantity = products.Count(_ => _.Id == _productId);
+            var quantity = cart.Products.Count(_ => _.Id == _productId);
 
             if (quantity < _quantity)
             {

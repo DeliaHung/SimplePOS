@@ -10,6 +10,6 @@ namespace SimplePOS.Domain.Entity
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public abstract decimal Process(List<Product> products);
+        public abstract decimal Process(Cart cart);
     }
 }
