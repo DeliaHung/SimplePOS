@@ -20,7 +20,7 @@ namespace SimplePOS.Domain.Entity
             {
                 var discount =  rule.Process(cart);
                 cart.TotalPrice -= discount.DiscountPrice;
-                cart.Discount.Add(discount);
+                cart.AppliedDiscounts.Add(discount);
             }
 
             return cart;

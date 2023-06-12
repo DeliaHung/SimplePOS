@@ -15,8 +15,10 @@ namespace SimplePOS.Domain.Entity
     }
 
     public enum RuleType
-    { 
+    {
+        //滿額折扣
         OrderWide,
+        //任選折扣
         ProductWide
     }
 

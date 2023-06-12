@@ -10,7 +10,7 @@ namespace SimplePOS.Domain.Entity
     {
         public int Id { get; set; }
         public List<Product> Products { get; set; } = new List<Product>();
-        public List<Discount> Discount { get; set; } = new List<Discount>();
+        public List<Discount> AppliedDiscounts { get; set; } = new List<Discount>();
         
         public decimal TotalPrice = 0;
 
