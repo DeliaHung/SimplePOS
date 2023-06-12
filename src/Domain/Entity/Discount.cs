@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SimplePOS.Domain.Entity
 {
-    public class Product
+    public class Discount
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-        public decimal SalePrice { get; set; }
+        public decimal DiscountPrice { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

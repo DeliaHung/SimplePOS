@@ -8,8 +8,31 @@ namespace SimplePOS.Domain.Entity
 {
     public abstract class DiscountRuleBase
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-        public abstract decimal Process(Cart cart);
+        public RuleType RuleType { get; set; }
+        public abstract Discount Process(Cart cart);
+    }
+
+    public enum RuleType
+    { 
+        OrderWide,
+        ProductWide
+    }
+
+    public abstract class OrderWideDiscount : DiscountRuleBase
+    {
+        public OrderWideDiscount()
+        {
+            RuleType = RuleType.OrderWide;
+        }
+    }
+
+    public abstract class ProductWideDiscount : DiscountRuleBase
+    {
+        public ProductWideDiscount()
+        {
+            RuleType = RuleType.ProductWide;
+        }
     }
 }

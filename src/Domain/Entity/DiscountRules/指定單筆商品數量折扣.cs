@@ -19,17 +19,19 @@ namespace SimplePOS.Domain.Entity.DiscountRules
             _discountPrice = discountPrice;
         }
 
-        public override decimal Process(Cart cart)
+        public override Discount Process(Cart cart)
         {
+            Discount discount = new Discount();
             var quantity = cart.Products.Count(_ => _.Id == _productId);
 
             if (quantity < _quantity)
             {
-                return 0;
+                return null;
             }
             else
             {
-                return _discountPrice;
+                discount.DiscountPrice = _discountPrice;
+                return discount;
             }
 
         }

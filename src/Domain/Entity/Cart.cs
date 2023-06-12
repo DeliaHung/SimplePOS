@@ -8,9 +8,9 @@ namespace SimplePOS.Domain.Entity
 {
     public class Cart
     {
+        public int Id { get; set; }
         public List<Product> Products { get; set; } = new List<Product>();
-        
-        public List<DiscountRuleBase> DiscountRules { get; set; } = new List<DiscountRuleBase>();
+        public List<Discount> Discount { get; set; } = new List<Discount>();
         
         public decimal TotalPrice = 0;
 
@@ -21,16 +21,6 @@ namespace SimplePOS.Domain.Entity
                 throw new ArgumentNullException();
             }
             Products.Add(product);
-        }
-
-        public void AddDiscountRule(DiscountRuleBase discountRule)
-        {
-            if (discountRule == null)
-            {
-                throw new ArgumentNullException(nameof(discountRule));
-            }
-
-            DiscountRules.Add(discountRule);
         }
     }
 }
